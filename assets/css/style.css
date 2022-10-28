@@ -1,0 +1,46 @@
+/*estilos da página index.html*/
+.center {
+    text-align: center;
+}
+
+.side {
+    text-align: left;
+}
+
+.otherside {
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.format {
+    width: 350px;
+    padding: 30px;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 30px;      
+}
+
+.p-1 {
+    padding: 30px;
+}
+
+.ml-20 {
+    margin-left: 20%;
+}
+
+.mr-20 {
+    margin-right: 20%;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+/*estilos da página index.html*/
