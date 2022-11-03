@@ -42,36 +42,37 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.165108154934!2d126.98603791484271!3d37.55117363276633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca257a88e6aa9%3A0x5cf8577c2e7982a5!2sN%20Seoul%20Tower!5e0!3m2!1spt-BR!2sbr!4v1667274168981!5m2!1spt-BR!2sbr"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa' ></iframe>
         </div>
         <div class="mb-50">
             <h2>Entre em contato</h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome">
-                <br>
-                <!--NÃO USAR BR, NÃO É BOA PRÁTICA-->
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email">
-                <br>
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
             </form>
-            <button>Enviar</button>
+            <br>
+            <button onclick="enviar()">Enviar</button>
         </div>
     </div>
     <hr>
     <footer class="center">
-        <div> 
-            <a href="https://pt-br.facebook.com/"><img class="tm p-1" src="assets/img/facebook.png" alt="Logo facebook"></a>
-            <a href="https://www.instagram.com/"><img class="tm p-1" src="assets/img/instagram.png" alt="Logo instagram"></a>
+        <div>
+            <a href="https://pt-br.facebook.com/"><img class="tm p-1" src="assets/img/facebook.png"
+                    alt="Logo facebook"></a>
+            <a href="https://www.instagram.com/"><img class="tm p-1" src="assets/img/instagram.png"
+                    alt="Logo instagram"></a>
             <a href="https://github.com/"><img class="tm p-1" src="assets/img/github-sign.png" alt="Logo github"></a>
         </div>
         SSR &copy;
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
